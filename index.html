@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-querry.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section id="info">
+            <h1>Calcular Empréstimo ou Financimento</h1>
+            <div class="formulario">
+                <form>
+                    <div class="valorEmprestimo"> <!--Valor que será emprestado-->
+                        <p>Valor que gostaria de tomar como empréstimo ou financiar:</p>
+                        <input type="number" value="emprestimo" name="emprestimo" id="emprestimo">
+                    </div> <!--Fim do valor do emprestimo-->
+                    <div class="taxaJuros">
+                        <p>Qual a taxa de juros oferecida pelo Banco ou Financiadora:</p>
+                        <input type="number" value="juros" name="radjuros" id="tempoJuros">
+                        % 
+                        <input type="radio" name="radjuros" id="aoMes" checked> <!--Opção mes ou ano-->
+                        <label for="mes">Ao mês (a.m)</label> 
+                        <input type="radio" name="radjuros" id="aoAno">
+                        <label for="ano">Ao ano (a.a)</label>
+                    </div>
+                    <div class="parcel">
+                        <p>Em quanto tempo gostaria de pagar:</p>
+                        <input type="number" value="tempo" name="radtempo" id="tempoPagamento">
+                        <input type="radio" name="radtempo" id="mes" checked> <!--Opção de pagamento-->
+                        <label for="mespag">Meses</label> <input type="radio" name="radtempo" id="ano">
+                        <label for="anopag">Ano(s)</label>
+                    </div>
+                    <div class="botoes">
+                        <input type="reset" value="Limpar" id="limpar"> <input type="button" value="calcular" onclick="calcular()" id="botao" >
+                    </div>
+                    <div id="resultado">
+                        O resultado aparece aqui...
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
