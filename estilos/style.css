@@ -128,7 +128,7 @@ div.botoes > #limpar {
     cursor: pointer;
 }
 
-div.botoes > #botao {
+div.botoes > #Calcular {
     padding: 5px;
     border: none;
     border-radius: 5px;
@@ -144,7 +144,7 @@ div.botoes > #limpar:hover {
     background-color: rgb(221, 221, 221);
 }
 
-div.botoes > #calcular:hover {
+div.botoes > #Calcular:hover {
     background-color: rgb(58, 58, 92);
     color: white;
     border: none;
