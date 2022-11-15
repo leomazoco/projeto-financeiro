@@ -28,7 +28,9 @@ function calcular(){
         var tempoJuros = document.getElementById('tempoJuros')
         var tempParcela = document.getElementById('tempoPagamento')
 
-        var vlEmpre = Number(empre.value)
+        res.innerHTML = 'Você irá pagar o emprestimo em anos'
+
+       var vlEmpre = Number(empre.value)
 
         var percJuros = Number(tempoJuros.value)
 
@@ -39,11 +41,10 @@ function calcular(){
         var montante = (vlEmpre*jurosDecimal).toFixed(2)
         var vlPago = (montante/mesemAno).toFixed(2)
 
-        res.innerHTML = `30% de sua renda corresponde a R$ ${percRenda}`
         res.innerHTML += `<p>Você deseja R$ ${vlEmpre} de emprestimo`
         res.innerHTML += `<p>O valor a ser pago será de R$ ${montante}`
         res.innerHTML += `<p>O emprestimo será pag em <strong>${mesemAno}x</strong> de <strong>R$ ${vlPago}</strong></p>`
-
+    
     } else {
         window.alert('O tempo de aplicação do juros e de pagamento devem ser iguais')
     }
